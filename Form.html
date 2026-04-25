@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Management </title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+    <div class="header">
+    <h2>Contact Management System</h2>
+    <button class="logout-btn">Logout</button>
+</div>
+
+<form onsubmit="return saveContact()">
+    <h2 class="Form-Heading">FORM</h2>
+    <input type="text" id="fname" placeholder="First Name" required>
+    <input type="text" id="lname" placeholder="Last Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="bio" placeholder="Biography" required>
+    <input type="url" id="image" placeholder="Image URL" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <input type="text" id="address" placeholder="Address" required>
+    <input type="text" id="contact" placeholder="Contact" required>
+
+    <div class="gender-container">
+        
+        <div class="gender">
+            <p>Gender:</p>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+    </div>
+
+    <button type="submit">Save Data</button>
+</form>
+
+<div id="output"></div>
+
+<script src="Form.js"></script>
+</body> 
+</html>

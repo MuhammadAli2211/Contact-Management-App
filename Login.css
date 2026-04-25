@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #3d32b4, #302b63, #13132e);
+}
+
+form {
+    width: 360px;
+    padding: 60px;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(0, 198, 255, 0.5);
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 0 0 15px rgba(0, 198, 255, 0.8);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 2px 6px rgba(0, 198, 255, 0.4);
+    color: white;
+}
+
+input:focus {
+    background: rgba(83, 50, 126, 0.25);
+    box-shadow: 0 0 12px rgba(0, 198, 255, 0.8);
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(216, 214, 230, 0.7);
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: rgb(198, 190, 235);
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 198, 255, 0.6);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #009ed6;
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.9);
+}
+
+#output {
+    width: 360px;
+    margin-top: 20px;
+}
+
+#output div {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 8px 22px rgba(0, 198, 255, 0.5);
+}

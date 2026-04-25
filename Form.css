@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 80px 0 0 0;    
+    padding-top: 70px;
+    font-family: "Segoe UI", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3d32b4, #302b63, #13132e);
+}
+
+.header {
+    width: 100%;
+        height: 60px;              /* FIX: consistent header height */
+    padding: 0 20px;    
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.logout-btn {
+    padding: 10px;
+    margin-right: 50px; 
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background: #00c6ff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #009ed6;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 80px; 
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 198, 255, 0.4);
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.Form-Heading {
+    text-align: center;
+    color: #00c6ff;
+    font-size: 22px;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(0, 198, 255, 0.7);
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 198, 255, 0.7);
+}
+
+/* INPUTS */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    box-shadow: inset 0 2px 6px rgba(0, 198, 255, 0.4);
+    transition: 0.3s;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+form input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.8);
+    transform: scale(1.03);
+}
+
+.gender {
+    display: flex;
+    justify-content: space-around; /* FIX: better spacing */
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%; 
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 198, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 30px rgba(0, 198, 255, 0.9);
+}
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.user-card {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 198, 255, 0.4);
+    color: rgb(198, 190, 235);
+    transition: 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 198, 255, 0.7);
+}
+.edit-btn {
+    background: #ffcc00;
+    color: black;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+}
+
+.edit-btn:hover {
+    background: #e6b800;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+    transform: translateY(-2px);
+}
+
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+}
+
+.delete-btn:hover {
+    background: #e60000;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.8);
+    transform: translateY(-2px);
+}
+.profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

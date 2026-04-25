@@ -1,0 +1,101 @@
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #3d32b4, #302b63, #13132e);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 340px;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 198, 255, 0.4);
+    text-align: center;
+        transition: 0.3s;
+}
+
+.form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 198, 255, 0.7);
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 198, 255, 0.8);
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    box-shadow: inset 0 2px 6px rgba(0, 198, 255, 0.4);
+    transition: 0.3s;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.8);
+    transform: scale(1.03);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 198, 255, 0.5);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00c6ff;
+    box-shadow: 0 0 30px rgba(0, 198, 255, 0.9);
+}
+.switch-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+}
+
+.switch-text a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.switch-text a:hover {
+    color: #009ed6;
+    text-decoration: underline;
+}
