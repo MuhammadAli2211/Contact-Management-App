@@ -1,5 +1,11 @@
 function login() {
 
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser) {
+        window.location.href = "Form.html";
+        return false;
+    }
+    
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
@@ -26,3 +32,13 @@ function login() {
 
     return false;
 }
+window.onload = function () {
+
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (currentUser) {
+        window.location.replace("Form.html");
+    }
+
+};
+    
