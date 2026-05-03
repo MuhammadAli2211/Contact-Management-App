@@ -1,10 +1,4 @@
 function login() {
-
-    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
-    if (currentUser) {
-        window.location.href = "Form.html";
-        return false;
-    }
     
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
