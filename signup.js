@@ -11,6 +11,14 @@ function signup() {
 
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
+        for (let i = 0; i < users.length; i++) {
+        if (users[i].email === email) {
+            alert("Email already exists!");
+            return false;
+        }
+    }
+
+
     let newUser = {
         id: users.length + 1,
         username: username,
