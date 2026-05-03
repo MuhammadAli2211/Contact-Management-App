@@ -27,3 +27,14 @@ function signup() {
 
     return false;
 }
+
+window.onload = function () {
+
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (currentUser) {
+        window.location.replace("Form.html");
+    }
+
+};
+  
